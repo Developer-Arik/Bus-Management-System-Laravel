@@ -69,7 +69,7 @@ class BusController extends Controller
         if(!$data){
             return abort(404);
         }
-        $markedSeats = $request->marked;
+        $markedSeats = (array) $request->marked;
         $seats = [];
 
         for ($i=0; $i < sizeof($data->seats); $i++) {

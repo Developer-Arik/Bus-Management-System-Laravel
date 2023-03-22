@@ -264,7 +264,6 @@ class BookingController extends Controller
 
                 return view('pages.pay-booking',[
                     "item" => $data,
-                    "seats" => json_encode($seats),
                     "busId" => $dt->scedule->bus->id
                 ]);
             }

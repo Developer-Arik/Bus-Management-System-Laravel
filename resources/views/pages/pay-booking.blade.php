@@ -50,7 +50,7 @@
 @endsection
 @section('style')
     <meta name="busId" value="{{ $busId }}">
-    <meta name="seats" value='{{ $seats }}' >
+    <meta name="seats" value='{{ $item['seats'] }}' >
     <style>
         .seat-ul{
             margin: 0 !important;
@@ -136,7 +136,7 @@
         type: "GET",
         url: "/seats/"+$(`meta[name="busId"]`).attr("value"),
         data: {
-            "marked" : $(`meta[name="seats"]`).attr("value")
+            "marked" : $(`meta[name="seats"]`).attr("value").split(',')
         },
         dataType: "JSON",
         success: function (response) {
