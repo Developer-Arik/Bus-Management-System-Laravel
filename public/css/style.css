@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+body{
+    min-height: 100vh;
+    position: relative;
+}
+header{z-index: 9999;box-shadow: 0px -3px 15px #000;}
+#top-menu li a{text-decoration: none !important;color: #000;padding: 10px 12px;font-family: 'Poppins', sans-serif;font-weight: 600;}
+#top-menu li{display: inline-block !important;}
+#top-menu li{
+  display: inline-block !important;
+  margin: 0;padding: 0;
+}
+#top-menu li.active a{background: rgb(45 6 88) !important;color: #fff;}
+.butts a{font-family: 'Poppins', sans-serif;}
+#offcanvas{z-index: 99999;background:#fff;position:fixed;width: 100%;top: 0;display: none;}
+ul#mob-menu li {
+  text-align: center;
+}
+ul#mob-menu li a{
+  text-decoration:none;
+}
+ul#mob-menu li{padding:6px 0px;font-size:22px;}
+ul#mob-menu li a{color:#000;}
+ul#mob-menu li.active a{color:#2685f9 !important;}
+#offcanvas .bott{height: 65vh !important;font-family: 'Poppins', sans-serif;}
+#offcanvas .bott a{font-family: 'Poppins', sans-serif;}
+#otp-box{display: none;}
+.vertical-menu ul{
+    list-style-type: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.vertical-menu ul li{
+    position: relative;
+    display: block;
+}
+.vertical-menu ul li a{
+    background: #dc3545;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none !important;
+    color: #fff;
+    margin: 2px 0;
+    color: #fff !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.vertical-menu ul li a.active{
+    background: #962631;
+    font-weight: 550;
+}
+.brdcmp{
+    margin: 12px 0;
+    display: flex;
+    width: 100%;
+    border-bottom: 3px solid #00674766;
+}
+.ticket-card{
+    background: #e6f5c6;
+    padding: 12px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.ticket-card > .details{
+    width: fit-content;
+}
+.ticket-card > .ticket{
+    width: fit-content;
+}
+.ticket-card > .details > .pnr{
+    margin: 0;
+    padding: 5px;
+    color: #00814e;
+}
+.ticket-card > .details > .desc{
+    margin: 0;
+    padding: 5px;
+}
+.faq-box{
+    margin: 6px 0;
+    padding: 6px 12px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 2px #000;
+}
+.faq-box > .upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-faq{
+    transition: .3s;
+    box-shadow: none !important;
+}
+.btn-roted{
+    transform: rotateZ(180deg);
+}
